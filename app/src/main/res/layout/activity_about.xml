@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.scu.pocketcampus.About">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/back"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="This App is created by Santa Clara University Students!"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+
+    <TextView
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Vaishali Dhulshette\n          and\n   Ankita Batni"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:textColor="#795548"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="For queries and feedback please contact below email id.\n
+pocketcampusteam@gmail.com"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"/>
+</LinearLayout>
+
+
+</LinearLayout>

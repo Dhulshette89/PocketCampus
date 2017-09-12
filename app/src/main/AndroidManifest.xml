@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.scu.pocketcampus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginScreen">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.loginScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUp">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.signup" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Signup1">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.signup1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeScreen">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.HomeScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EventHome">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.event" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:windowSoftInputMode="adjustResize"
+            android:name=".SearchProfessor">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.rate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Signup2">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.rate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VerifyEmail">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.rate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Chat"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.rate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChatRoom"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.rate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddProfessor">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.rate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RateProfessor">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.rate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ResetPassword">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.rate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".About">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.rate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Profile">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.rate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewProfessor">
+            <intent-filter>
+                <action android:name="com.scu.pocketcampus.rate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PostEvent"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name=".EventList" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBsIob4FzFkDJ9DCzuKvka-fYqYgcwSvmk" />
+
+        <activity
+            android:name=".Location"
+            android:label="@string/title_activity_location" />
+    </application>
+
+</manifest>
